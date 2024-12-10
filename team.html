@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+        <title>KON PAY - TEAM</title>
+
+        <meta name="robots" content="index, follow" />
+        <meta name="copyright" content="© KONPAY" />
+        <meta name="description" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta name="keywords" content="konpay, 콘페이, pay, kon, 페이, ethereum, eth, btc, bitcoin, 블록체인, 이더리움, 비트코인, 페이먼츠, 페이먼트, payments, payment" />
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta name="twitter:title" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta name="twitter:description" content="콘페이가 새로운 시대의 금융을 열어드립니다. 카드와 현금 사용 시대에서 이제는 디지털 페이의 시대로. 새로운 금융에 눈뜨다!" />
+        <meta name="twitter:image" content="//konpay.io/assets/img/og-image.png" />
+        <!-- Facebook -->
+        <meta property="og:title" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="//konpay.io/assets/img/og-image.png" />
+        <meta property="og:description" content="콘페이가 새로운 시대의 금융을 열어드립니다. 카드와 현금 사용 시대에서 이제는 디지털 페이의 시대로. 새로운 금융에 눈뜨다!" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/img/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/assets/img/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link href="/assets/css/font.css" rel="stylesheet" />
+        <link href="/assets/css/plugins/atropos.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+
+        <script src="/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="./assets/js/multilingual.js"></script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="logo" onclick="location.href='/'"></div>
+            <div class="mobile-nav"></div>
+            <div class="mobile-menu-div">
+                <!-- <div class="mobile-menu-backdrop"></div> -->
+                <div class="mobile-menu">
+                    <div class="close-btn"></div>
+                    <ul>
+                        <li onclick="location.href='/'">
+                            <p>HOME</p>
+                            <div class="mobile-menu-line1"></div>
+                        </li>
+                        <li onclick="location.href='/roadmap.html'">
+                            <p>Roadmap</p>
+                            <div class="mobile-menu-line2"></div>
+                        </li>
+                        <li class="on" onclick="location.href='/team.html'">
+                            <p>Team</p>
+                            <div class="mobile-menu-line3 on"></div>
+                        </li>
+                        <!--
+                        <li class="mobile-menu-btn" onclick="window.open('https://Konpay.io')">
+                            <p>KON Auction</p>
+                        </li>-->
+                        <li id="mobile-menu-btn-buy" class="mobile-menu-btn">
+                            <div class="mobie-buy-kon">
+                                <p id="exc" onclick="window.open('https://vexk.io/trade/spot/kon/usdt')">VEXK</p>
+                                <p id="exc" onclick="window.open('https://www.bybit.com/en-US/trade/spot/KON/USDT')">Bybit</p>
+                                <p id="exc" onclick="window.open('https://www.gate.io/trade/KON_USDT')">Gate.io</p>
+                                <p id="exc" onclick="window.open('https://poloniex.com/trade/KON_USDT/?type=spot')">Poloniex</p>
+                                <p style="opacity: 0 !important">Buy KON</p>
+                            </div>
+                            <p>Buy KON</p>
+                        </li>
+                        <li class="mobile-menu-btn" onclick="openWhitePaper()">
+                            <p>Whitepaper</p>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu-btn-lang">
+                        <div class="mobile-lang-div">
+                            <div id="mobile-lang0" class="mobile-lang-header noselect">
+                                <div id="mobile-lang-0" class="mobile-lang-en"></div>
+                                <p id="mobile-lang-txt-0" class="mobile-lang-txt">EN</p>
+                            </div>
+                            <div class="mobile-lang-body">
+                                <div id="mobile-lang1" class="mobile-lang2 noselect">
+                                    <div id="mobile-lang-1" class="mobile-lang-ko"></div>
+                                    <p id="mobile-lang-txt-1" class="mobile-lang-txt">KO</p>
+                                </div>
+                                <div id="mobile-lang2" class="mobile-lang2 noselect">
+                                    <div id="mobile-lang-2" class="mobile-lang-ja"></div>
+                                    <p id="mobile-lang-txt-2" class="mobile-lang-txt">JA</p>
+                                </div>
+                                <div id="mobile-lang3" class="mobile-lang2 noselect">
+                                    <div id="mobile-lang-3" class="mobile-lang-zh"></div>
+                                    <p id="mobile-lang-txt-3" class="mobile-lang-txt">ZH</p>
+                                </div>
+                                <div id="mobile-lang4" class="mobile-lang3 noselect">
+                                    <div id="mobile-lang-4" class="mobile-lang-vn"></div>
+                                    <p id="mobile-lang-txt-4" class="mobile-lang-txt">VN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div onclick="location.href='/'" class="menu-txt noselect">HOME</div>
+                <div onclick="location.href='/roadmap.html'" class="menu-txt noselect">Roadmap</div>
+                <div onclick="location.href='/team.html'" class="menu-txt active noselect">Team</div>
+                <div class="atropos my-atropos7">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) 
+                            <div class="atropos-inner">
+                                <div class="menu-btn" onclick="window.open('https://konpay.io')">KON Auction</div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos1">
+                    <!-- scale container (required) -->
+                    <div id="my-atropos1-scale" class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div id="my-atropos1-rotate" class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div id="my-atropos1-inner" class="atropos-inner">
+                                <!--<div class="menu-btn" onclick="window.open('https://www.gate.io/trade/KON_USDT')">Buy KON</div>-->
+                                <div class="buy-btn-lang">
+                                    <div class="buy-div">
+                                        <div class="buy-header noselect">
+                                            <p class="buy-txt">Buy KON</p>
+                                        </div>
+                                        <div class="buy-body">
+                                            <div class="bang2 noselect">
+                                                <p class="buy-txt">VEXK</p>
+                                            </div>
+                                            <div class="bang2 noselect">
+                                                <p class="buy-txt">Bybit</p>
+                                            </div>
+                                            <div class="bang2 noselect">
+                                                <p class="buy-txt">Gate.io</p>
+                                            </div>
+                                            <div class="bang3 noselect">
+                                                <p class="buy-txt">Poloniex</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos2">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <div class="menu-btn" onclick="openWhitePaper()">Whitepaper</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-btn-lang">
+                    <div class="lang-div">
+                        <div id="lang0" class="lang-header noselect">
+                            <div id="lang-0" class="lang-en"></div>
+                            <p id="lang-txt-0" class="lang-txt">EN</p>
+                        </div>
+                        <div class="lang-body">
+                            <div id="lang1" class="lang2 noselect">
+                                <div id="lang-1" class="lang-ko"></div>
+                                <p id="lang-txt-1" class="lang-txt">KO</p>
+                            </div>
+                            <div id="lang2" class="lang2 noselect">
+                                <div id="lang-2" class="lang-ja"></div>
+                                <p id="lang-txt-2" class="lang-txt">JA</p>
+                            </div>
+                            <div id="lang3" class="lang2 noselect">
+                                <div id="lang-3" class="lang-zh"></div>
+                                <p id="lang-txt-3" class="lang-txt">ZH</p>
+                            </div>
+                            <div id="lang4" class="lang3 noselect">
+                                <div id="lang-4" class="lang-vn"></div>
+                                <p id="lang-txt-4" class="lang-txt">VN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="core-team">
+            <div class="wrapper">
+                <div class="title-txt">Core Team</div>
+                <div id="team-img-div" class="team-img-div"></div>
+            </div>
+        </section>
+
+        <section class="advisors">
+            <div class="wrapper">
+                <div class="title-txt">Advisors</div>
+                <div id="advisor-img-div" class="team-img-div"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-wrap">
+                <div class="app-download">
+                    <div class="app-download-div">
+                        <img src="/assets/img/google.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.wallet.app.wallet_app')" />
+                        <img src="/assets/img/apple.png" onclick="window.open('https://apps.apple.com/kr/app/konpay/id1660178515')" />
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-div">
+                        <img src="/assets/img/logo.png" class="footer-logo" />
+                        <a href="mailto:help@konpay.io">Contact us : help@konpay.io</a>
+                        <div data-langNum="20" class="footer-txt1">Please contact us for any inquiries related to service and wallet operation.</div>
+                        <div class="footer-sns-div">
+                            <img src="/assets/img/Twitter.png" class="footer-sns" onclick="window.open('https://twitter.com/konpay_official')" />
+                            <img src="/assets/img/Telegram.png" class="footer-sns" onclick="window.open('https://t.me/Konpay_announce')" />
+                            <img src="/assets/img/Telegram.png" class="footer-sns" onclick="window.open('https://t.me/Konpay_community')" />
+                            <img src="/assets/img/Medium.png" class="footer-sns" onclick="window.open('https://konpay.medium.com/')" />
+                        </div>
+                        <div class="footer-txt2">Copyright ⓒ 2021 KONPAY All Right Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var language = ['en', 'ko', 'ja', 'zh', 'vn'];
+            var currentLang = '';
+
+            function langOpenClose() {
+                if ($('.lang-header').hasClass('on')) {
+                    $('.lang-body').removeClass('on');
+                    setTimeout(() => {
+                        $('.lang-header').removeClass('on');
+                    }, 200);
+                } else {
+                    $('.lang-header').addClass('on');
+                    setTimeout(() => {
+                        $('.lang-body').addClass('on');
+                    }, 200);
+                }
+            }
+
+            function langOpenCloseMobile() {
+                if ($('.mobile-lang-header').hasClass('on')) {
+                    $('.mobile-lang-body').removeClass('on');
+                    setTimeout(() => {
+                        $('.mobile-lang-header').removeClass('on');
+                    }, 200);
+                } else {
+                    $('.mobile-lang-header').addClass('on');
+                    setTimeout(() => {
+                        $('.mobile-lang-body').addClass('on');
+                    }, 200);
+                }
+            }
+
+            function languageChange(lang) {
+                $('#lang-0, #lang-1, #lang-2, #lang-3, #lang-4').removeClass('lang-en lang-ko lang-ja lang-zh lang-vn');
+                $('#mobile-lang-0, #mobile-lang-1, #mobile-lang-2, #mobile-lang-3, #mobile-lang-4').removeClass('mobile-lang-en mobile-lang-ko mobile-lang-ja mobile-lang-zh mobile-lang-vn');
+
+                var orderIdx = 1;
+                for (var i = 0; i < language.length; i++) {
+                    if (language[i] != lang) {
+                        $('#lang-' + orderIdx).addClass('lang-' + language[i]);
+                        $('#lang-txt-' + orderIdx).text(language[i].toUpperCase());
+                        $('#mobile-lang-' + orderIdx).addClass('mobile-lang-' + language[i]);
+                        $('#mobile-lang-txt-' + orderIdx).text(language[i].toUpperCase());
+                        orderIdx++;
+                    } else {
+                        $('#lang-0').addClass('lang-' + language[i]);
+                        $('#lang-txt-0').text(language[i].toUpperCase());
+                        $('#mobile-lang-0').addClass('mobile-lang-' + language[i]);
+                        $('#mobile-lang-txt-0').text(language[i].toUpperCase());
+                    }
+                }
+
+                window.localStorage.setItem('language', lang.toUpperCase());
+                setLanguage(lang.toUpperCase());
+                currentLang = lang.toUpperCase();
+                init();
+            }
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100 && $('.nav').hasClass('on') == false) {
+                    $('.nav').addClass('on');
+                } else if (window.scrollY <= 100 && $('.nav').hasClass('on') == true) {
+                    $('.nav').removeClass('on');
+                }
+            });
+
+            $(document).ready(function () {
+                var storeLanguage = window.localStorage.getItem('language');
+
+                if (storeLanguage != null) {
+                    currentLang = storeLanguage;
+                    languageChange(storeLanguage.toLowerCase().trim());
+                } else {
+                    window.localStorage.setItem('language', 'EN');
+                    currentLang = 'EN';
+                    init();
+                }
+
+                $('#lang0').click(function () {
+                    languageChange($(this).text().toLowerCase().trim());
+                    langOpenClose();
+                });
+                $('#lang1, #lang2, #lang3, #lang4').click(function () {
+                    languageChange($(this).text().toLowerCase().trim());
+                    langOpenClose();
+                    init();
+                });
+
+                $('#mobile-lang0').click(function () {
+                    languageChange($(this).text().toLowerCase().trim());
+                    langOpenCloseMobile();
+                });
+
+                $('#mobile-lang1, #mobile-lang2, #mobile-lang3, #mobile-lang4').click(function () {
+                    languageChange($(this).text().toLowerCase().trim());
+                    langOpenCloseMobile();
+                    init();
+                });
+
+                $('.close-btn, .mobile-nav, .mobile-menu-backdrop').click(function () {
+                    $('.mobile-menu-div').toggleClass('on');
+                    if ($('.mobile-menu-div').hasClass('on')) {
+                        setTimeout(() => {
+                            $('.nav').removeClass('on');
+                        }, 300);
+                        disableScroll();
+                    } else {
+                        $('.nav').addClass('on');
+                        enableScroll();
+                    }
+                });
+
+                $('#mobile-menu-btn-buy').click(function () {
+                    if ($('.mobie-buy-kon').hasClass('on')) {
+                        $('#mobile-menu-btn-buy').removeClass('on');
+
+                        setTimeout(() => {
+                            $('.mobie-buy-kon').removeClass('on');
+                        }, 200);
+                    } else {
+                        $('.mobie-buy-kon').addClass('on');
+                        setTimeout(() => {
+                            $('#mobile-menu-btn-buy').addClass('on');
+                        }, 200);
+                    }
+                });
+
+                $('.buy-btn-lang').click(function () {
+                    if ($('.buy-header').hasClass('on')) {
+                        $('.buy-body').removeClass('on');
+
+                        setTimeout(() => {
+                            $('.buy-header').removeClass('on');
+
+                            $('#my-atropos1-inner').css('overflow', 'hidden');
+                        }, 200);
+                    } else {
+                        $('#my-atropos1-inner').css('overflow', 'visible');
+                        $('#my-atropos1-rotate').css('transform', 'inherit');
+                        $('#my-atropos1-scale').css('transform', 'inherit');
+
+                        $('.buy-header').addClass('on');
+
+                        setTimeout(() => {
+                            $('.buy-body').addClass('on');
+                        }, 200);
+                    }
+                });
+
+                $('.bang2, .bang3').click(function () {
+                    var ex = $(this).text().trim();
+                    if (ex == 'VEXK') {
+                        setTimeout(() => {
+                            window.open('https://vexk.io/trade/spot/kon/usdt');
+                        }, 200);
+                    } else if (ex == 'Bybit') {
+                        setTimeout(() => {
+                            window.open('https://www.bybit.com/en-US/trade/spot/KON/USDT');
+                        }, 200);
+                    } else if (ex == 'Gate.io') {
+                        setTimeout(() => {
+                            window.open('https://www.gate.io/trade/KON_USDT');
+                        }, 200);
+                    } else if (ex == 'GDAC') {
+                        setTimeout(() => {
+                            window.open('https://www.gdac.com/exchange/KON/USDT');
+                        }, 200);
+                    } else if (ex == 'Poloniex') {
+                        setTimeout(() => {
+                            window.open('https://poloniex.com/trade/KON_USDT/?type=spot');
+                        }, 200);
+                    }
+
+                    $('.buy-body').removeClass('on');
+
+                    setTimeout(() => {
+                        $('.buy-header').removeClass('on');
+
+                        $('#my-atropos1-inner').css('overflow', 'hidden');
+                    }, 200);
+                });
+            });
+
+            $(window).on('resize', function () {
+                if (matchMedia('(max-width: 575px)').matches) {
+                } else if (matchMedia('(min-width: 576px) and (max-width: 767px)').matches) {
+                } else {
+                    if ($('.mobile-menu-div').hasClass('on')) {
+                        $('.mobile-menu-div').removeClass('on');
+                    }
+                }
+            });
+
+            function disableScroll() {
+                $('body').addClass('non-scroll');
+                $('body').bind('touchmove', function (e) {
+                    e.preventDefault();
+                });
+            }
+
+            function enableScroll() {
+                $('body').removeClass('non-scroll');
+                $('body').unbind('touchmove');
+            }
+
+            function init() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://konpay-admin.konpay.io/DashBoard/GetTeamsLists',
+                    processData: false,
+                    contentType: 'Application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        var items = data;
+                        var html = '';
+
+                        $.each(items, function (index, val) {
+                            var imgUrl = encodeURI('https://konpay-admin.konpay.io/' + val.img);
+                            var txt = '';
+                            var name = '';
+                            if (currentLang == 'KO') {
+                                txt = val.text.replace(/\n/gi, '<span style="display: block; margin-bottom: 1em"></span>');
+                                name = val.name;
+                            } else {
+                                txt = val.textEn.replace(/\n/gi, '<span style="display: block; margin-bottom: 1em"></span>');
+                                name = val.nameEn;
+                            }
+
+                            html += `<div class="team-img-box">`;
+                            html += `<div class="team-img-header">`;
+                            html += `<img src="` + imgUrl + `"/>`;
+                            html += `</div>`;
+                            html += `<div class="team-img-txt-div">`;
+                            html += `<div class="team-txt1">` + name + `</div>`;
+                            html += `<div class="team-txt2">` + val.position + `</div>`;
+                            html += `<div class="team-line"></div>`;
+                            html += `<div class="team-txt3">` + txt + ``;
+                            html += `</div>`;
+                            html += `</div>`;
+                            html += `</div>`;
+                        });
+
+                        $('#team-img-div').html(html);
+                    },
+                    error: function (request, status, error) {
+                        //alert('code:' + request.status + '\n\nmessage: ' + request.responseText + '\n\nerror:' + error);
+                    },
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://konpay-admin.konpay.io/DashBoard/GetAdvisorLists',
+                    processData: false,
+                    contentType: 'Application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        var items = data;
+                        var html = '';
+
+                        $.each(items, function (index, val) {
+                            var imgUrl = encodeURI('https://konpay-admin.konpay.io/' + val.img);
+                            var txt = '';
+                            var name = '';
+                            if (currentLang == 'KO') {
+                                txt = val.text.replace(/\n/gi, '<span style="display: block; margin-bottom: 1em"></span>');
+                                name = val.name;
+                            } else {
+                                txt = val.textEn.replace(/\n/gi, '<span style="display: block; margin-bottom: 1em"></span>');
+                                name = val.nameEn;
+                            }
+
+                            html += `<div class="team-img-box">`;
+                            html += `<div class="team-img-header">`;
+                            html += `<img src="` + imgUrl + `"/>`;
+                            html += `</div>`;
+                            html += `<div class="team-img-txt-div">`;
+                            html += `<div class="team-txt1">` + name + `</div>`;
+                            html += `<div class="team-txt2">` + val.position + `</div>`;
+                            html += `<div class="team-line"></div>`;
+                            html += `<div class="team-txt3">` + txt + ``;
+                            html += `</div>`;
+                            html += `</div>`;
+                            html += `</div>`;
+                        });
+
+                        $('#advisor-img-div').html(html);
+                    },
+                    error: function (request, status, error) {
+                        //alert('code:' + request.status + '\n\nmessage: ' + request.responseText + '\n\nerror:' + error);
+                    },
+                });
+            }
+
+            function openWhitePaper() {
+                var currentLang = window.localStorage.getItem('language');
+
+                if (currentLang == 'KO') {
+                    window.open('/konpay_whitepaper_kr_v1.2.5.pdf');
+                } else if (currentLang == 'JA') {
+                    window.open('/konpay_whitepaper_jp_v1.2.5.pdf');
+                } else if (currentLang == 'ZH') {
+                    window.open('/konpay_whitepaper_cn_v1.2.5.pdf');
+                } else {
+                    window.open('/konpay_whitepaper_en_v1.2.5.pdf');
+                }
+            }
+        </script>
+    </body>
+</html>

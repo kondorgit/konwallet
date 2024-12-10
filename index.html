@@ -1,0 +1,645 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+        <title>KON PAY</title>
+
+        <meta name="robots" content="index, follow" />
+        <meta name="copyright" content="© KONPAY" />
+        <meta name="description" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta name="keywords" content="konpay, 콘페이, pay, kon, 페이, ethereum, eth, btc, bitcoin, 블록체인, 이더리움, 비트코인, 페이먼츠, 페이먼트, payments, payment" />
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta name="twitter:title" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta name="twitter:description" content="콘페이가 새로운 시대의 금융을 열어드립니다. 카드와 현금 사용 시대에서 이제는 디지털 페이의 시대로. 새로운 금융에 눈뜨다!" />
+        <meta name="twitter:image" content="//konpay.io/assets/img/og-image.png" />
+        <!-- Facebook -->
+        <meta property="og:title" content="한눈에 보는 나의 디지털자산, KONPAY" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="//konpay.io/assets/img/og-image.png" />
+        <meta property="og:description" content="콘페이가 새로운 시대의 금융을 열어드립니다. 카드와 현금 사용 시대에서 이제는 디지털 페이의 시대로. 새로운 금융에 눈뜨다!" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/img/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/assets/img/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link href="/assets/css/font.css" rel="stylesheet" />
+        <link href="/assets/css/plugins/atropos.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/assets/css/plugins/swiper-bundle.css" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1.0" />
+
+        <script src="/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="./assets/js/multilingual.js"></script>
+        <script type="text/javascript" src="/assets/js/plugins/sketchfab.js"></script>
+        <script src="/assets/js/plugins/lax.js"></script>
+        <script src="/assets/js/plugins/gsap.min.js"></script>
+        <script src="/assets/js/plugins/atropos.min.js"></script>
+        <script type="text/javascript" src="/assets/js/plugins/swiper-bundle.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8805MGWH5E"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-8805MGWH5E');
+        </script>
+    </head>
+
+    <body class="non-scroll">
+        <div class="top-layer"></div>
+
+        <div class="refresh-div">
+            <div class="refresh-backdrop"></div>
+            <img src="/assets/img/logo.png" class="refresh-logo" />
+        </div>
+
+        <div class="nav">
+            <div class="logo" onclick="location.href='/'"></div>
+            <div class="mobile-nav"></div>
+            <div class="mobile-menu-div">
+                <!-- <div class="mobile-menu-backdrop"></div> -->
+                <div class="mobile-menu">
+                    <div class="close-btn"></div>
+                    <ul>
+                        <li onclick="location.href='/'" class="on">
+                            <p>HOME</p>
+                            <div class="mobile-menu-line1 on"></div>
+                        </li>
+                        <li onclick="location.href='/roadmap.html'">
+                            <p>Roadmap</p>
+                            <div class="mobile-menu-line2"></div>
+                        </li>
+                        <li onclick="location.href='/team.html'">
+                            <p>Team</p>
+                            <div class="mobile-menu-line3"></div>
+                        </li>
+                        <li id="mobile-menu-btn-buy" class="mobile-menu-btn">
+                            <div class="mobie-buy-kon">
+                                <p id="exc" onclick="window.open('https://vexk.io/trade/spot/kon/usdt')">VEXK</p>
+                                <p id="exc" onclick="window.open('https://www.bybit.com/en-US/trade/spot/KON/USDT')">Bybit</p>
+                                <p id="exc" onclick="window.open('https://www.gate.io/trade/KON_USDT')">Gate.io</p>
+                                <p id="exc" onclick="window.open('https://poloniex.com/trade/KON_USDT/?type=spot')">Poloniex</p>
+                                <p style="opacity: 0 !important">Buy KON</p>
+                            </div>
+                            <p>Buy KON</p>
+                        </li>
+                        <li class="mobile-menu-btn" onclick="openWhitePaper()">
+                            <p>Whitepaper</p>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu-btn-lang">
+                        <div class="mobile-lang-div">
+                            <div id="mobile-lang0" class="mobile-lang-header noselect">
+                                <div id="mobile-lang-0" class="mobile-lang-en"></div>
+                                <p id="mobile-lang-txt-0" class="mobile-lang-txt">EN</p>
+                            </div>
+                            <div class="mobile-lang-body">
+                                <div id="mobile-lang1" class="mobile-lang2 noselect">
+                                    <div id="mobile-lang-1" class="mobile-lang-ko"></div>
+                                    <p id="mobile-lang-txt-1" class="mobile-lang-txt">KO</p>
+                                </div>
+                                <div id="mobile-lang2" class="mobile-lang2 noselect">
+                                    <div id="mobile-lang-2" class="mobile-lang-ja"></div>
+                                    <p id="mobile-lang-txt-2" class="mobile-lang-txt">JA</p>
+                                </div>
+                                <div id="mobile-lang3" class="mobile-lang2 noselect">
+                                    <div id="mobile-lang-3" class="mobile-lang-zh"></div>
+                                    <p id="mobile-lang-txt-3" class="mobile-lang-txt">ZH</p>
+                                </div>
+                                <div id="mobile-lang4" class="mobile-lang3 noselect">
+                                    <div id="mobile-lang-4" class="mobile-lang-vn"></div>
+                                    <p id="mobile-lang-txt-4" class="mobile-lang-txt">VN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div onclick="location.href='/'" class="menu-txt active noselect">HOME</div>
+                <div onclick="location.href='/roadmap.html'" class="menu-txt noselect">Roadmap</div>
+                <div onclick="location.href='/team.html'" class="menu-txt noselect">Team</div>
+                
+                <div class="atropos my-atropos7">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos1">
+                    <!-- scale container (required) -->
+                    <div id="my-atropos1-scale" class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div id="my-atropos1-rotate" class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div id="my-atropos1-inner" class="atropos-inner">
+                                <!--<div class="menu-btn" onclick="window.open('https://www.gate.io/trade/KON_USDT')">Buy KON</div>-->
+                                <div class="buy-btn-lang">
+                                    <div class="buy-div">
+                                        <div class="buy-header noselect">
+                                            <p class="buy-txt">Buy KON</p>
+                                        </div>
+                                        <div class="buy-body">
+                                            <div class="bang2 noselect">
+                                                <p class="buy-txt">VEXK</p>
+                                            </div>
+                                            <div class="bang2 noselect">
+                                                <p class="buy-txt">Bybit</p>
+                                            </div>
+                                            <div class="bang2 noselect">
+                                                <p class="buy-txt">Gate.io</p>
+                                            </div>
+                                            <div class="bang3 noselect">
+                                                <p class="buy-txt">Poloniex</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos2">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <div class="menu-btn" onclick="openWhitePaper()">Whitepaper</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-btn-lang">
+                    <div class="lang-div">
+                        <div id="lang0" class="lang-header noselect">
+                            <div id="lang-0" class="lang-en"></div>
+                            <p id="lang-txt-0" class="lang-txt">EN</p>
+                        </div>
+                        <div class="lang-body">
+                            <div id="lang1" class="lang2 noselect">
+                                <div id="lang-1" class="lang-ko"></div>
+                                <p id="lang-txt-1" class="lang-txt">KO</p>
+                            </div>
+                            <div id="lang2" class="lang2 noselect">
+                                <div id="lang-2" class="lang-ja"></div>
+                                <p id="lang-txt-2" class="lang-txt">JA</p>
+                            </div>
+                            <div id="lang3" class="lang2 noselect">
+                                <div id="lang-3" class="lang-zh"></div>
+                                <p id="lang-txt-3" class="lang-txt">ZH</p>
+                            </div>
+                            <div id="lang4" class="lang3 noselect">
+                                <div id="lang-4" class="lang-vn"></div>
+                                <p id="lang-txt-4" class="lang-txt">VN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atropos my-atropos5" style="z-index: 8">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                        <section class="main">
+                            <div class="main-title">
+                                <span class="main-title-fadeIn title1" data-atropos-offset="-4">KON</span>
+                                <div class="gap main-title-fadeIn"></div>
+                                <span class="main-title-fadeIn title2" data-atropos-offset="-4">PAY</span>
+                            </div>
+                            <div class="main-img-div" data-atropos-offset="4">
+                                <img src="/assets/img/token_trx.png" class="main-sub-img-0" data-atropos-offset="80" alt="" />
+                                <img src="/assets/img/token_ada.png" class="main-sub-img-1" data-atropos-offset="40" alt="" />
+                                <img src="/assets/img/token_btc.png" class="main-sub-img-2" data-atropos-offset="40" alt="" />
+                                <img src="/assets/img/token_eth.png" class="main-sub-img-3" data-atropos-offset="40" alt="" />
+                                <img src="/assets/img/token_kon.png" class="main-sub-img-4" data-atropos-offset="0" alt="" />
+                                <img src="/assets/img/token_sand.png" class="main-sub-img-5" data-atropos-offset="-50" alt="" />
+                                <img src="/assets/img/token_sol.png" class="main-sub-img-6" data-atropos-offset="-30" alt="" />
+                                <img src="/assets/img/token_xrp.png" class="main-sub-img-7" data-atropos-offset="-40" alt="" />
+                                <img src="/assets/img/main-phone.png" class="main-img" alt="" />
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="main2">
+                <div class="main-bottom">
+                    <div class="atropos my-atropos3">
+                        <!-- scale container (required) -->
+                        <div class="atropos-scale">
+                            <!-- rotate container (required) -->
+                            <div class="atropos-rotate">
+                                <!-- inner container (required) -->
+                                <div class="atropos-inner">
+                                    <div class="main-btn" onclick="mainAppDownload()">APP DOWNLOAD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-subtxt-div">
+                        <span data-langNum="0" class="main-subtxt">KONPAY, my digital assets management place</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="sub-section-1">
+            <div class="video-div">
+                <video src="/assets/video/main.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+            </div>
+            <div data-langNum="1" class="sub-title">Are you still<br />buying and selling<br />digital assets?</div>
+            <div data-langNum="2" class="sub-title2">We hope that digital assets<br />in the changing era will no<br />longer be an investment-only asset.</div>
+            <div data-langNum="3" class="sub-title2">We hope that digital assets,<br />that are considered to be<br />speculative, will become closert<br />closer to our life.</div>
+            <div data-langNum="4" class="sub-title2">Konpay will open up a<br />new era of finance.</div>
+            <div data-langNum="5" class="sub-title2">From the era of<br />card and cash to the era<br />of digital payments.</div>
+            <div data-langNum="6" class="sub-title2">we are now awakened to new finance!</div>
+            <div data-langNum="7" class="sub-title3">Features of Konpay</div>
+            <div data-langNum="8" class="sub-title4">A hassle-free<br />payment solution.</div>
+        </section>
+
+        <section class="sub-section-2">
+            <div class="section-2-div">
+                <div class="atropos my-atropos4">
+                    <div class="atropos-scale">
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner" style="overflow: visible !important">
+                                <div class="section-2-img">
+                                    <img src="/assets/img/phone-back.png" class="section-2-phoneback" data-atropos-offset="-4" />
+                                    <img src="/assets/img/phone-back2.png" class="section-2-phoneback2" data-atropos-offset="-4" />
+                                    <img src="/assets/img/crypto1.png" class="section-2-phonecrypto1" data-atropos-offset="5" />
+                                    <img src="/assets/img/crypto3.png" class="section-2-phonecrypto3" data-atropos-offset="4" />
+                                    <img src="/assets/img/crypto4.png" class="section-2-phonecrypto4" data-atropos-offset="3" />
+                                    <img src="/assets/img/crypto2.png" class="section-2-phonecrypto2" data-atropos-offset="2" />
+                                    <img src="/assets/img/crypto5.png" class="section-2-phonecrypto5" data-atropos-offset="2" />
+                                    <div class="phone-bottom-div" data-atropos-offset="-3">
+                                        <img src="/assets/img/phone-bottom1.png" class="section-2-phonebottom1 phone-bottom" data-atropos-offset="-3" />
+                                        <img src="/assets/img/phone-bottom2.png" class="section-2-phonebottom2 phone-bottom" data-atropos-offset="-1" />
+                                        <img src="/assets/img/phone-bottom3.png" class="section-2-phonebottom3 phone-bottom" data-atropos-offset="-1" />
+                                    </div>
+                                    <div class="phone-process-div">
+                                        <img src="/assets/img/pro_01.png" class="pro_01" />
+                                        <img src="/assets/img/pro_01_1.png" class="pro_01_1" />
+                                        <div class="process_dim"></div>
+                                        <img src="/assets/img/pro_02.png" class="pro_02" />
+                                        <div class="pro_02_div">
+                                            <img src="/assets/img/pro_02_1.png" class="pro_02_1" />
+                                            <img src="/assets/img/pro_03.png" class="pro_03" />
+                                            <img src="/assets/img/pro_04.png" class="pro_04" />
+                                            <img src="/assets/img/pro_05.png" class="pro_05" />
+                                            <img src="/assets/img/pro_06_1.png" class="pro_06_1" />
+                                            <img src="/assets/img/pro_06.png" class="pro_06" />
+                                        </div>
+                                    </div>
+                                    <img src="/assets/img/glass-hardware.png" class="section-2-phone" data-atropos-offset="-4" />
+                                    <!--<img src="/assets/img/hud.png" class="section-2-hud" />-->
+                                    <div class="sketchfab-embed-wrapper section-2-hud">
+                                        <iframe
+                                            id="iframe"
+                                            title="Earthquakes - 2010 & 2011"
+                                            frameborder="0"
+                                            allowfullscreen
+                                            mozallowfullscreen="true"
+                                            webkitallowfullscreen="true"
+                                            allow="autoplay; fullscreen; xr-spatial-tracking"
+                                            xr-spatial-tracking
+                                            execution-while-out-of-viewport
+                                            execution-while-not-rendered
+                                            web-share
+                                            width="47vw"
+                                            height="44vw"
+                                            src="https://sketchfab.com/models/3a57cfbbcb1c45278c13bc66886dd6ee/embed?autospin=1&autostart=1&transparent=1&ui_animations=0&ui_infos=0&ui_stop=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_hint=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0&dnt=1"
+                                            class="iframe"
+                                        >
+                                        </iframe>
+                                        <img id="hud" src="/assets/img/hud.png" class="iframe_img" style="display: none" />
+                                        <div class="iframe-backdrop"></div>
+                                    </div>
+                                    <!--<canvas class="webgl section-2-hud"></canvas>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-2-txt-div">
+                    <div class="section-2-txt">
+                        <span data-langNum="9" class="section-2-txt1">Multi-digital asset payment support</span>
+                        <span data-langNum="10" class="section-2-txt2"
+                            >KONPAY establishes their own self-Mainnet so the KON mainnet network keeps transmission fees at zero and boasts a speed of 1,000 TPS. By technical support contract between Hexland and Mainnet, service buyers and
+                            merchants can expand their multi-digital asset payment and receiving benefits and rewards when paying with KONPAY Token.</span
+                        >
+                    </div>
+                    <div class="section-3-txt">
+                        <span data-langNum="11" class="section-3-txt1">NFT MarketPlace Using KON</span>
+                        <span data-langNum="12" class="section-3-txt2"
+                            >KONMARKET uses KONPAY Mainnet to support copyright protection and transparent reliability in the cultural content market, and solves chronic shortcomings such as sales contracts. In addition, it is a marketplace
+                            where authors, producers, suppliers, and consumers can actively communicate and operate by utilizing blockchain's distributed ledger technology.</span
+                        >
+                    </div>
+                    <div class="section-4-txt">
+                        <span data-langNum="13" class="section-4-txt1">KON Mainnet network (Game, NFT)</span>
+                        <span data-langNum="14" class="section-4-txt2"
+                            >Konpay's KON Mainnet ecosystem covers NFT, game, and Web 3.0 fields. We support bridges exclusively for KON Network and plan to support an active ecosystem in the game and NFT fields. It operates a separate
+                            Reserve Pool and has various scalability from initial operation to financing.</span
+                        >
+                    </div>
+                    <div class="section-5-txt">
+                        <span data-langNum="15" class="section-5-txt1">Payment Process</span>
+                        <div class="pagination-bar">
+                            <div id="indicator" class="pagination-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub-section-3">
+            <div class="media">
+                <div class="media-txt1">Media</div>
+                <div data-langNum="16" class="media-txt2">Check out the Konpay's new media</div>
+                <div id="swiper" class="swiper youtube-div">
+                    <div id="swiper-wrapper" class="swiper-wrapper swiper-wrapper-custom"></div>
+                </div>
+                <div class="swiper-page-custom">
+                    <div id="swiper-button-prev" class="swiper-button-prev"></div>
+                    <div id="swiper-button-next" class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="exchange">
+                <div class="exchange-txt1">Exchange</div>
+                <div data-langNum="17" class="exchange-txt2">Digital asset KON can be traded on major global exchanges</div>
+                <div class="exchange-div">
+                    <div class="exchange-img1">
+                        <img src="/assets/img/bybit.png" class="exchange-image" />
+                    </div>
+                    <div class="exchange-img2">
+                        <img src="/assets/img/gateio.png" class="exchange-image" />
+                    </div>
+                    <div class="exchange-img4">
+                        <img src="/assets/img/poloniex.png" class="exchange-image" />
+                    </div>
+                    <div class="exchange-img5">
+                        <img src="/assets/img/vexk.png" class="exchange-image" />
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="exchange-txt1">News</div>
+                <div data-langNum="18" class="exchange-txt2">Check out Konpay's new news</div>
+                <div id="swiper2" class="swiper news-par-div">
+                    <div id="swiper-wrapper2" class="swiper-wrapper"></div>
+                </div>
+                <div class="swiper-page-custom">
+                    <div id="swiper-button-prev2" class="swiper-button-prev"></div>
+                    <div id="swiper-button-next2" class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="partners-div">
+                    <div class="exchange-txt1">Partners</div>
+                    <div data-langNum="19" class="exchange-txt2">Check out Konpay's new partners</div>
+                    <div class="parners-img-div"></div>
+                </div>
+            </div>
+            <div class="app-download">
+                <div class="app-download-div">
+                    <img src="/assets/img/google.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.wallet.app.wallet_app')" />
+                    <img src="/assets/img/apple.png" onclick="window.open('https://apps.apple.com/kr/app/konpay/id1660178515')" />
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-div">
+                    <img src="/assets/img/logo.png" class="footer-logo" />
+                    <a href="mailto:help@konpay.io">Contact us : help@konpay.io</a>
+                    <div data-langNum="20" class="footer-txt1">Please contact us for any inquiries related to service and wallet operation.</div>
+                    <div class="footer-sns-div">
+                        <img src="/assets/img/Twitter.png" class="footer-sns" onclick="window.open('https://twitter.com/konpay_official')" />
+                        <img src="/assets/img/Telegram.png" class="footer-sns" onclick="window.open('https://t.me/Konpay_announce')" />
+                        <img src="/assets/img/Telegram.png" class="footer-sns" onclick="window.open('https://t.me/Konpay_community')" />
+                        <img src="/assets/img/Medium.png" class="footer-sns" onclick="window.open('https://konpay.medium.com/')" />
+                    </div>
+                    <div class="footer-txt2">Copyright ⓒ 2021 KONPAY All Right Reserved.</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-container">
+            <div class="scroller"></div>
+        </div>
+
+        <script src="/assets/js/custom.js?v1.1" type="module"></script>
+        <script>
+            function mainAppDownload() {
+                var varUA = navigator.userAgent.toLowerCase();
+
+                if (varUA.indexOf('android') > -1) {
+                    window.open('https://play.google.com/store/apps/details?id=com.wallet.app.wallet_app');
+                } else if (varUA.indexOf('iphone') > -1 || varUA.indexOf('ipad') > -1 || varUA.indexOf('ipod') > -1) {
+                    window.open('https://apps.apple.com/kr/app/konpay/id1660178515');
+                } else {
+                    window.open('https://play.google.com/store/apps/details?id=com.wallet.app.wallet_app');
+                }
+            }
+
+            var mediaSliderCnt = 3;
+            var newsSliderCnt = 4;
+            var newsSpaceBetween = 14;
+            document.addEventListener('DOMContentLoaded', function () {
+                if (matchMedia('(max-width: 575px)').matches) {
+                    mediaSliderCnt = 1;
+                    newsSliderCnt = 1;
+                    newsSpaceBetween = 20;
+                } else if (matchMedia('(min-width: 576px) and (max-width: 767px)').matches) {
+                    mediaSliderCnt = 1;
+                    newsSliderCnt = 2;
+                    newsSpaceBetween = 20;
+                } else {
+                    mediaSliderCnt = 3;
+                    newsSliderCnt = 3;
+                    newsSpaceBetween = 14;
+                }
+                gallerySliderSwiper();
+            });
+
+            function gallerySliderSwiper() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://konpay-admin.konpay.io/DashBoard/GetMediaLists',
+                    processData: false,
+                    contentType: 'Application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        var items = data;
+                        var html = '';
+
+                        $.each(items, function (index, val) {
+                            var url = encodeURI('https://www.youtube.com/embed/') + val.mediaId + '?rel=0';
+
+                            html += '<div class="swiper-slide">';
+                            html += '<iframe ';
+                            html += 'class="youtube-frame" ';
+                            html += 'src="' + url + '" ';
+                            html += 'frameborder="0" ';
+                            html += 'allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ';
+                            html += 'frameborder="0" ';
+                            html += 'iframe-video ';
+                            html += '></iframe>';
+                            html += '</div>';
+                        });
+
+                        /*
+                        html += '<div class="swiper-slide display_none">';
+                        html += '<div ';
+                        html += 'class="youtube-frame">';
+                        html += '</div>';
+                        html += '</div>';
+                        */
+
+                        $('#swiper-wrapper').html(html);
+
+                        var gallerySliderSwiper = new Swiper('#swiper', {
+                            direction: 'horizontal',
+                            slidesPerView: mediaSliderCnt,
+                            spaceBetween: 14,
+                            navigation: {
+                                // 버튼
+                                nextEl: '#swiper-button-next',
+                                prevEl: '#swiper-button-prev',
+                            },
+                        });
+                    },
+                    error: function (request, status, error) {
+                        //alert('code:' + request.status + '\n\nmessage: ' + request.responseText + '\n\nerror:' + error);
+                    },
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://konpay-admin.konpay.io/DashBoard/GetNewsLists',
+                    processData: false,
+                    contentType: 'Application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        var items = data;
+                        var html = '';
+
+                        $.each(items, function (index, val) {
+                            var url = encodeURI(val.newsUrl);
+                            var imgUrl = encodeURI('https://konpay-admin.konpay.io/' + val.thumbnail);
+
+                            html += '<div class="swiper-slide">';
+                            html += '<div class="news-div" onClick="window.open(`' + url + '`)">';
+                            html += '<div class="news-div-header"><img src="' + imgUrl + '" /></div>';
+                            html += '<div class="news-div-body">';
+                            html += '<div class="news-div-body-txt1">' + val.newsPublishDate + '</div>';
+                            html += '<div class="news-div-body-txt2">' + val.newsTitle + '</div>';
+                            html += '<div class="news-div-body-txt3">' + val.newsText;
+                            html += '</div>';
+                            html += '</div>';
+                            html += '</div>';
+                            html += '</div>';
+                        });
+
+                        $('#swiper-wrapper2').html(html);
+
+                        var gallerySliderSwiper2 = new Swiper('#swiper2', {
+                            direction: 'horizontal',
+                            slidesPerView: newsSliderCnt,
+                            spaceBetween: newsSpaceBetween,
+                            navigation: {
+                                // 버튼
+                                nextEl: '#swiper-button-next2',
+                                prevEl: '#swiper-button-prev2',
+                            },
+                        });
+                    },
+                    error: function (request, status, error) {
+                        //alert('code:' + request.status + '\n\nmessage: ' + request.responseText + '\n\nerror:' + error);
+                    },
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://konpay-admin.konpay.io/DashBoard/GetPartnersLists',
+                    processData: false,
+                    contentType: 'Application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        var items = data;
+                        var html = '';
+
+                        $.each(items, function (index, val) {
+                            var imgUrl = encodeURI('https://konpay-admin.konpay.io/' + val.partnerImage);
+
+                            html += '<div class="parners-img">';
+                            html += '<img src="' + imgUrl + '" class="parners-image" />';
+                            html += '</div>';
+                        });
+
+                        $('.parners-img-div').html(html);
+                    },
+                    error: function (request, status, error) {
+                        //alert('code:' + request.status + '\n\nmessage: ' + request.responseText + '\n\nerror:' + error);
+                    },
+                });
+            }
+
+            var tag = document.createElement('script');
+            tag.src = 'https://www.youtube.com/iframe_api';
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            function onYouTubeIframeAPIReady(id) {
+                let player = document.querySelectorAll('[iframe-video]');
+                let buttons = document.querySelectorAll('[video-buttons]');
+            }
+
+            function openWhitePaper() {
+                var currentLang = window.localStorage.getItem('language');
+
+                if (currentLang == 'KO') {
+                    window.open('/konpay_whitepaper_kr_v1.2.5.pdf');
+                } else if (currentLang == 'JA') {
+                    window.open('/konpay_whitepaper_jp_v1.2.5.pdf');
+                } else if (currentLang == 'ZH') {
+                    window.open('/konpay_whitepaper_cn_v1.2.5.pdf');
+                } else {
+                    window.open('/konpay_whitepaper_en_v1.2.5.pdf');
+                }
+            }
+        </script>
+    </body>
+</html>
