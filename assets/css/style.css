@@ -1418,7 +1418,7 @@ iframe {
     display: inline-block;
 }
 .youtube-div {
-    width: 72vw;
+    width: 100vw;
     overflow: hidden;
     display: inline-block;
 }
@@ -1438,14 +1438,11 @@ iframe {
     top: 0;
     left: 0;
 }
-
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 100%; /* 최대 너비를 100%로 설정 */
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 비율 (높이 / 너비 = 9 / 16 = 0.5625) */
-    background-color: #000;
+    max-width: 100%;
+    padding-bottom: 56.25%;
 }
 
 .video-wrapper iframe {
@@ -1456,7 +1453,6 @@ iframe {
     height: 100%;
     border: none;
 }
-
 
 .swiper-page-custom {
     height: var(--swiper-navigation-size);
@@ -3228,7 +3224,7 @@ iframe {
     }
 
     .swiper-wrapper {
-        width: 18vw;
+        width: 28vw;
     }
 
     .news-par-div {
@@ -3847,7 +3843,7 @@ footer {
     line-height: 6.25vw;
     letter-spacing: -0.13889vw;
     color: #f5f5f7;
-    margin-bottom: 224px;
+    margin-bottom: 100px;
 }
 
 .roadmap-div {
