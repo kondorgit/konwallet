@@ -391,12 +391,16 @@
                 <div class="media-txt1">Media</div>
                 <div data-langNum="16" class="media-txt2">Check out the Konpay's new media</div>
                 <div id="swiper" class="swiper youtube-div">
-                    <div id="swiper-wrapper" class="swiper-wrapper swiper-wrapper-custom"></div>
+                    <div id="swiper-wrapper" class="swiper-wrapper swiper-wrapper-custom">
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/Mok-pZ8QxWg" width="800" height="450" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
+                    </div>
                 </div>
-                <div class="swiper-page-custom">
+                <!-- <div class="swiper-page-custom">
                     <div id="swiper-button-prev" class="swiper-button-prev"></div>
                     <div id="swiper-button-next" class="swiper-button-next"></div>
-                </div>
+                </div> -->
             </div>
             <div class="exchange">
                 <div class="exchange-txt1">Exchange</div>
@@ -422,16 +426,87 @@
                 <div id="swiper2" class="swiper news-par-div">
                     <div id="swiper-wrapper2" class="swiper-wrapper"></div>
                 </div>
-                <div class="swiper-page-custom">
+
+                <div class="newnews-container">
+                    <div class="newnews">
+                        <a href="https://view.asiae.co.kr/article/2024092609562533274" target="_blank">
+                            <img src="assets/img/news0926.jpg" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">디지털 자산 충전식 선불카드 ‘콘페이 카드’ 공식 런칭</p>
+                    </div>
+                    <div class="newnews">
+                        <a href="https://www.etnews.com/20240422000092" target="_blank">
+                            <img src="assets/img/news0422.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">디지털 자산 결제 플랫폼 '콘페이' 대규모 업데이트 완료</p>
+                    </div>
+                    <div class="newnews">
+                        <a href="https://www.lawissue.co.kr/view.php?ud=202206221948322112204ead0791_12" target="_blank">
+                            <img src="assets/img/news220622.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">바이비트, 결제에 특화된 블록체인 플랫폼 ‘콘페이’ 코인 상장</p>
+                    </div>
+                    <div class="newnews">
+                        <a href="https://www.mk.co.kr/news/world/10682144" target="_blank">
+                            <img src="assets/img/news230315.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">콘페이, WEB3.0 DWF Labs로부터 투자 유치…결제 시장 공략</p>
+                    </div>
+                </div>
+
+                <div class="newnews-container">
+                    <div class="newnews">
+                        <a href="https://www.gametoc.co.kr/news/articleView.html?idxno=71356" target="_blank">
+                            <img src="assets/img/news230216.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">콘페이 글로벌 디지털 거래소 폴로닉스에 16일 상장</p>
+                    </div>
+
+                    <div class="newnews">
+                        <a href="https://www.sisamagazine.co.kr/news/articleView.html?idxno=479732" target="_blank">
+                            <img src="assets/img/news230111.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">후오비글로벌 PrimeVote TOP20, ‘콘페이’ 선정</p>
+                    </div>
+                    <div class="newnews">
+                        <a href="https://www.nbnews.kr/news/articleView.html?idxno=63292" target="_blank">
+                            <img src="assets/img/news220831.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">콘페이(KONPAY), 글로벌 거래소 게이트아이오 상장</p>
+                    </div>
+                    <div class="newnews">
+                        <a href="https://sports.khan.co.kr/article/202112101142003" target="_blank">
+                            <img src="assets/img/news211210.png" class="newnews-header">
+                        </a>
+                        <p class="newnews-title">콘페이, 옥텟 API 시스템 구축, 블록체인 시장 상용화 속도 낸다</p>
+                    </div>    
+                </div>
+                
+                <!-- <div class="swiper-page-custom">
                     <div id="swiper-button-prev2" class="swiper-button-prev"></div>
                     <div id="swiper-button-next2" class="swiper-button-next"></div>
-                </div>
+                </div> -->
             </div>
             <div class="partners">
                 <div class="partners-div">
                     <div class="exchange-txt1">Partners</div>
                     <div data-langNum="19" class="exchange-txt2">Check out Konpay's new partners</div>
-                    <div class="parners-img-div"></div>
+                            <div class="parners-img-div">
+                                <div class="parners-img">
+                                    <img src="assets/img/pt01.png" class="parners-image">
+                                </div>
+                                <div class="parners-img">
+                                    <img src="assets/img/pt02.png" class="parners-image">
+                                </div>
+                                <div class="parners-img">
+                                    <img src="assets/img/pt03.png" class="parners-image">
+                                </div>
+                                <div class="parners-img">
+                                    <img src="assets/img/pt06.png" class="parners-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="app-download">
@@ -546,6 +621,8 @@
                     },
                 });
 
+
+
                 $.ajax({
                     type: 'POST',
                     url: 'https://konpay-admin.konpay.io/DashBoard/GetNewsLists',
@@ -555,6 +632,7 @@
                     success: function (data) {
                         var items = data;
                         var html = '';
+                        
 
                         $.each(items, function (index, val) {
                             var url = encodeURI(val.newsUrl);
