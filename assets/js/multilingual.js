@@ -50,6 +50,56 @@ $.lang.EN = {
     46: 'Phase 4: Service Expansion and Innovation',
     47: 'Introduced additional partners and offline payment services',
     48: 'Expanded global partnerships and collaborations',
+    49: 'Seyoung Cha',
+    50: 'FOUNDER',
+    51: 'KONDOR CEO',
+    52: 'Advisor Professor, Department of Blockchain / Metaverse, Seoul Venture University',
+    53: 'Self-regulatory member of Korea Blockchain Association',
+    54: 'Generation 1 of Korea University "Blockchain AMP Course"',
+    55: 'Young Chul Jang',
+    56: 'F) Senior researcher, Indicos',
+    57: 'Wyatt Lee',
+    58: 'F) Kbit Marketing & Planning',
+    59: 'F) ICUBEN Marketing',
+    60: 'Eun Sil Ko',
+    61: 'F) Jiyeon Global Shopping Operation Manager',
+    62: 'F) Freesia Online Shopping Operation Manager',
+    63: 'F) LS ELECTRIC HR team',
+    64: 'KOO LEE',
+    65: 'F) THE Tensegrity Project Manager',
+    66: 'Multiple blockchain project consultant',
+    67: 'Blockchain content development',
+    68: 'Digital asset exchange operations manager',
+    69: 'Jong Geon Kim',
+    70: 'F) Outside director of NH-Amundi Asset Management',
+    71: 'F) Outside director of KG Inicis Co., Ltd.',
+    72: 'F) CEO of Global Marine Financing Co., Ltd.',
+    73: 'F) Full-time auditor and director of Citibank Korea',
+    74: 'F) Secretary General of the Credit Recovery Committee of the ...', //Secretary General of the Credit Recovery Committee of the Financial Supervisory Service
+    
+    75: 'Jeong Ki Ho',
+    76: 'F) CEO of Agricultral Cooperative Chungbuk Marketing Inc.',
+    77: 'F) CEO of NONGHYUP LOGIS.',
+    78: 'F) Director of the Audit Committee Office',
+    79: 'F) Head of Agricultural Economic Planning Department',
+
+    80: 'Kim Ju Seon',
+    81: 'F) Head of organized crime of SPO',
+    82: 'F) Director of Drug and Organized Crime Investigation of SPO',
+    83: 'F) Deputy Prosecutor of Jeju District Prosecutor, Deputy Prosecutor of Bucheon Branch Office',
+    84: 'F) Cheonan branch manager, Gangneung branch manager',
+    85: 'F) Non-executive director of Korea Electric Power Corporation',
+
+        
+    86: 'Hong Seong Hwa',
+    87: 'Chairman of the Italian Culture and Arts Association of the IMC under UNESCO',
+    88: 'ADRIANA MALIPONTE Chairman for the Organizing Committee of the International Vocal Competition',
+    89: 'Chairman of the Advisory Committee on Foreign Cooperation for the Italia Novara COCCIA Theatre',
+    90: 'Special Member and Promotion Cooperation Member for the Federation of Middle Market Enterprises of Korea',
+    91: 'Global Business Alliance Culture, Sports and Tourism Committee Chairperson',
+    92: 'Cultural Industry Promotion Agency of Korea Cooperative',
+    93: 'AROSRED CEO',
+
 };
 
 $.lang.KO = {
@@ -102,6 +152,61 @@ $.lang.KO = {
     46: 'Phase 4: 서비스 확장 및 혁신',
     47: '오프라인 결제 및 제휴사 추가 도입',
     48: '글로벌 파트너십 및 협력사 확대',
+    49: '차세영',
+    50: '창립자',
+    51: 'KONDOR CEO',
+    52: '현) 서울벤처대학교 블록체인/메타버스 학과 지도 교수',
+    53: '현) 대한블록체인협회 자율규제의원',
+    54: '고려대학교 블록체인 최고경영자과정 1기수료',
+    55: '장영철',
+    56: '전) 인디코스 선임연구원',
+    57: '이우주',
+    58: '전) 케이비트 마케팅&기획',
+    59: '전) ICUBEN 마케팅',
+    60: '고은실',
+    61: '지연상사 해외쇼핑몰 운영',
+    62: '후리지아 온라인 쇼핑몰 운영',
+    63: '엘에스일렉트릭 인사팀',
+    64: '이동규',
+    65: '전) Tensegrity PM',
+    66: '블록체인 다수 프로젝트 자문 및 운영',
+    67: '블록체인 관련 콘텐츠제작업 운영',
+    68: '가상자산 거래소 고객센터 구축 및 운영 총괄',
+    69: '김종건',
+    70: '전) NH-Amundi자산운용㈜ 사외이사',
+    71: '전) KG이니시스㈜ 사외이사',
+    72: '전) 세계로선박금융㈜ 대표이사',
+    73: '전) 한국씨티은행 상근감사위원 겸 이사',
+    69: '김종건',
+    70: '전) NH-Amundi자산운용㈜ 사외이사',
+    71: '전) KG이니시스㈜ 사외이사',
+    72: '전) 세계로선박금융㈜ 대표이사',
+    73: '전) 한국씨티은행 상근감사위원 겸 이사',
+    74: '전) 금융감독원 신용회복위원회 사무국장', //Secretary General of the Credit Recovery Committee of the Financial Supervisory Service
+    
+    75: '정기호',
+    76: '전) 농협충북유통 대표이사',
+    77: '전) 농협물류 대표이사',
+    78: '전) 감사위원회사무처 상무',
+    79: '전) 농업경제기획부 부장',
+
+    80: '김주선',
+    81: '전) 대검찰청 조직범죄과장',
+    82: '전) 서울중앙지검 마약,조직범죄수사부장',
+    83: '전) 제주지검 차장검사, 부천지청 차장검사',
+    84: '전) 천안지청장, 강릉지청장',
+    85: '전) 한국전력공사 비상임이사',
+
+    86: '홍성화',
+    87: '유네스코 산하 IMC 이탈리아 문화예술협회 회장',
+    88: 'ADRIANA MALIPONTE 국제성악콩쿨 조직위원장',
+    89: '이탈리아 노바라 코차 극장 외국 협력 자문위원회 회장',
+    90: '한국중견기업연합회 특별회원',
+    91: '사단법인 GBA 국제 문화체육관광위원장',
+    92: 'Cultural Industry Promotion Agency of Korea Cooperative',
+    93: 'AROSRED CEO',
+
+    
 };
 
 $.lang.VN = {
@@ -154,6 +259,7 @@ $.lang.VN = {
     46: 'Phase 4: Mở rộng và đổi mới dịch vụ' ,
     47: 'Giới thiệu thêm đối tác và dịch vụ thanh toán offline' ,
     48: 'Mở rộng quan hệ đối tác và hợp tác toàn cầu' ,
+
 };
 
 $.lang.JA = {

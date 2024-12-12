@@ -721,9 +721,12 @@ $(window).on('resize', function () {
             $('.refresh-div').fadeIn(0);
         }
 
+        $( ".refresh-div").hide();
+
+
         clearTimeout(timer);
         timer = setTimeout(function () {
-            window.location.reload();
+        window.location.reload();
             /*
         section_2_img_scroll = getAbsoluteTop(document.querySelector('.section-2-img'));
         scroll_event2_scroll = getAbsoluteTop(document.querySelector('.section-3-txt')) + 1000;
