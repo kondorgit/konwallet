@@ -135,22 +135,6 @@ $(document).ready(function () {
             setTimeout(() => {
                 window.open('https://vexk.io/trade/spot/kon/usdt');
             }, 200);
-        } else if (ex == 'Bybit') {
-            setTimeout(() => {
-                window.open('https://www.bybit.com/en-US/trade/spot/KON/USDT');
-            }, 200);
-        } else if (ex == 'Gate.io') {
-            setTimeout(() => {
-                window.open('https://www.gate.io/trade/KON_USDT');
-            }, 200);
-        } else if (ex == 'GDAC') {
-            setTimeout(() => {
-                window.open('https://www.gdac.com/exchange/KON/USDT');
-            }, 200);
-        } else if (ex == 'Poloniex') {
-            setTimeout(() => {
-                window.open('https://poloniex.com/trade/KON_USDT/?type=spot');
-            }, 200);
         }
 
         /*

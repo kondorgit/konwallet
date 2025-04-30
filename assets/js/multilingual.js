@@ -76,7 +76,7 @@ $.lang.EN = {
     72: 'F) CEO of Global Marine Financing Co., Ltd.',
     73: 'F) Full-time auditor and director of Citibank Korea',
     74: 'F) Secretary General of the Credit Recovery Committee of the ...', //Secretary General of the Credit Recovery Committee of the Financial Supervisory Service
-    
+
     75: 'Jeong Ki Ho',
     76: 'F) CEO of Agricultral Cooperative Chungbuk Marketing Inc.',
     77: 'F) CEO of NONGHYUP LOGIS.',
@@ -90,7 +90,7 @@ $.lang.EN = {
     84: 'F) Cheonan branch manager, Gangneung branch manager',
     85: 'F) Non-executive director of Korea Electric Power Corporation',
 
-        
+
     86: 'Hong Seong Hwa',
     87: 'Chairman of the Italian Culture and Arts Association of the IMC under UNESCO',
     88: 'ADRIANA MALIPONTE Chairman for the Organizing Committee of the International Vocal Competition',
@@ -99,6 +99,11 @@ $.lang.EN = {
     91: 'Global Business Alliance Culture, Sports and Tourism Committee Chairperson',
     92: 'Cultural Industry Promotion Agency of Korea Cooperative',
     93: 'AROSRED CEO',
+
+    94: 'Complete Overhaul and Advancement of KONPAY Wallet Security Architecture',
+    95: 'Optimization of KONPAY Wallet Transaction Processing Speed and App Performance',
+    96: 'Integration Support for Next-Generation High-Performance Mainnets and L2 Networks in KONPAY Wallet',
+    97: 'Establishment of a Foundation Service Hub Based on KONPAY Wallet and Expansion of Strategic Partnerships',
 
 };
 
@@ -140,7 +145,7 @@ $.lang.KO = {
     34: '글로벌 파트너(계열사 등) 확대',
     35: '거래소 협력 사업을 위한 파트너십',
     36: '글로벌 파트너(계열사 등) 확대',
-    37: 'Phase 1: UI/UX 개선' ,
+    37: 'Phase 1: UI/UX 개선',
     38: '사용자 친화적인 디자인 개선을 통한 서비스 최적화',
     39: 'UI/UX 전반에 걸친 개선 작업 완료',
     40: 'Phase 2: 브랜드 인지도 확대',
@@ -183,7 +188,7 @@ $.lang.KO = {
     72: '전) 세계로선박금융㈜ 대표이사',
     73: '전) 한국씨티은행 상근감사위원 겸 이사',
     74: '전) 금융감독원 신용회복위원회 사무국장', //Secretary General of the Credit Recovery Committee of the Financial Supervisory Service
-    
+
     75: '정기호',
     76: '전) 농협충북유통 대표이사',
     77: '전) 농협물류 대표이사',
@@ -206,7 +211,11 @@ $.lang.KO = {
     92: 'Cultural Industry Promotion Agency of Korea Cooperative',
     93: 'AROSRED CEO',
 
-    
+    94: 'KONPAY Wallet 보안 아키텍처 전면 리뉴얼 및 고도화',
+    95: 'KONPAY Wallet 트랜잭션 처리 속도 및 앱 퍼포먼스 최적화',
+    96: 'KONPAY Wallet 차세대 고성능 메인넷 및 L2 네트워크 연동 지원',
+    97: 'KONPAY Wallet 기반 재단 서비스 허브 구축 및 제휴 확대',
+
 };
 
 $.lang.VN = {
@@ -247,18 +256,24 @@ $.lang.VN = {
     34: 'Mở rộng đối tác toàn cầu (liên kết, v.v.)',
     35: 'Đối tác hợp tác và trao đổi dự án',
     36: 'Mở rộng đối tác toàn cầu (liên kết, v.v.)',
-    37: 'Phase 1: Nâng cao UI/UX' ,
-    38: 'Tối ưu hóa dịch vụ thông qua cải thiện thiết kế thân thiện với người dùng' ,
-    39: 'Hoàn thành các công việc cải thiện toàn diện UI/UX' ,
-    40: 'Phase 2: Mở rộng nhận diện thương hiệu' ,
-    41: 'Tiến hành các hoạt động củng cố thương hiệu cho KONPAY Wallet' ,
-    42: 'Mở rộng nhận thức về thương hiệu thông qua nhiều kênh khác nhau' ,
-    43: 'Phase 3: Quan hệ đối tác chiến lược' ,
-    44: 'Thiết lập quan hệ đối tác hỗ trợ thanh toán offline' ,
-    45: 'Mở rộng hợp tác với các đối tác mới' ,
-    46: 'Phase 4: Mở rộng và đổi mới dịch vụ' ,
-    47: 'Giới thiệu thêm đối tác và dịch vụ thanh toán offline' ,
-    48: 'Mở rộng quan hệ đối tác và hợp tác toàn cầu' ,
+    37: 'Phase 1: Nâng cao UI/UX',
+    38: 'Tối ưu hóa dịch vụ thông qua cải thiện thiết kế thân thiện với người dùng',
+    39: 'Hoàn thành các công việc cải thiện toàn diện UI/UX',
+    40: 'Phase 2: Mở rộng nhận diện thương hiệu',
+    41: 'Tiến hành các hoạt động củng cố thương hiệu cho KONPAY Wallet',
+    42: 'Mở rộng nhận thức về thương hiệu thông qua nhiều kênh khác nhau',
+    43: 'Phase 3: Quan hệ đối tác chiến lược',
+    44: 'Thiết lập quan hệ đối tác hỗ trợ thanh toán offline',
+    45: 'Mở rộng hợp tác với các đối tác mới',
+    46: 'Phase 4: Mở rộng và đổi mới dịch vụ',
+    47: 'Giới thiệu thêm đối tác và dịch vụ thanh toán offline',
+    48: 'Mở rộng quan hệ đối tác và hợp tác toàn cầu',
+
+    94: 'Cải tổ toàn diện và nâng cao kiến trúc bảo mật của Ví KONPAY',
+    95: 'Tối ưu hóa tốc độ xử lý giao dịch và hiệu suất ứng dụng của Ví KONPAY',
+    96: 'Hỗ trợ tích hợp các mạng chính hiệu suất cao thế hệ mới và mạng L2 vào Ví KONPAY',
+    97: 'Thiết lập Trung tâm Dịch vụ Nền tảng dựa trên Ví KONPAY và mở rộng quan hệ đối tác chiến lược',
+
 
 };
 
@@ -300,18 +315,24 @@ $.lang.JA = {
     34: 'グローバルパートナーの拡大（提携先など）',
     35: '交換と協力プロジェクトのためのパートナーシップ',
     36: 'グローバルパートナーの拡大（提携先など）',
-    37: 'Phase 1: UI/UXの改善' ,
-    38: 'ユーザーフレンドリーなデザイン改善によるサービスの最適化' ,
-    39: 'UI/UX全般にわたる改善作業を完了' ,
-    40: 'Phase 2: ブランド認知度の拡大' ,
-    41: 'KONPAY Walletのブランド強化活動を実施' ,
-    42: '様々なチャネルを通じたブランド認知度の拡大' ,
-    43: 'Phase 3: 戦略的パートナーシップ' ,
-    44: 'オフライン決済をサポートするためのパートナーシップを構築' ,
-    45: '新しい提携先との協力拡大' ,
-    46: 'Phase 4: サービスの拡大と革新' ,
-    47: 'オフライン決済および提携先を追加導入' ,
-    48: 'グローバルなパートナーシップおよび協力関係の拡大' ,
+    37: 'Phase 1: UI/UXの改善',
+    38: 'ユーザーフレンドリーなデザイン改善によるサービスの最適化',
+    39: 'UI/UX全般にわたる改善作業を完了',
+    40: 'Phase 2: ブランド認知度の拡大',
+    41: 'KONPAY Walletのブランド強化活動を実施',
+    42: '様々なチャネルを通じたブランド認知度の拡大',
+    43: 'Phase 3: 戦略的パートナーシップ',
+    44: 'オフライン決済をサポートするためのパートナーシップを構築',
+    45: '新しい提携先との協力拡大',
+    46: 'Phase 4: サービスの拡大と革新',
+    47: 'オフライン決済および提携先を追加導入',
+    48: 'グローバルなパートナーシップおよび協力関係の拡大',
+
+    94: 'KONPAYウォレットのセキュリティアーキテクチャの全面的な刷新と高度化',
+    95: 'KONPAYウォレットのトランザクション処理速度およびアプリパフォーマンスの最適化',
+    96: 'KONPAYウォレットにおける次世代高性能メインネットおよびL2ネットワークの統合支援',
+    97: 'KONPAYウォレットを基盤としたファウンデーションサービスハブの構築と戦略的パートナーシップの拡大',
+
 };
 
 $.lang.ZH = {
@@ -352,18 +373,24 @@ $.lang.ZH = {
     34: '扩大全球合作伙伴（附属公司等）',
     35: '交流与合作项目的合作伙伴关系',
     36: '扩大全球合作伙伴（附属公司等）',
-    37: 'Phase 1: UI/UX优化' ,
-    38: '通过用户友好型设计改善进行服务优化' ,
-    39: '完成全面的UI/UX改进工作' ,
-    40: 'Phase 2: 品牌知名度扩大' ,
-    41: '推进KONPAY Wallet品牌强化活动' ,
-    42: '通过各种渠道扩大品牌知名度' ,
-    43: 'Phase 3: 战略合作伙伴关系' ,
-    44: '为支持线下支付建立合作伙伴关系' ,
-    45: '扩大与新合作伙伴的合作' ,
-    46: 'Phase 4: 服务扩展与创新' ,
-    47: '引入更多线下支付服务及合作伙伴' ,
-    48: '扩大全球合作伙伴关系及合作项目' ,
+    37: 'Phase 1: UI/UX优化',
+    38: '通过用户友好型设计改善进行服务优化',
+    39: '完成全面的UI/UX改进工作',
+    40: 'Phase 2: 品牌知名度扩大',
+    41: '推进KONPAY Wallet品牌强化活动',
+    42: '通过各种渠道扩大品牌知名度',
+    43: 'Phase 3: 战略合作伙伴关系',
+    44: '为支持线下支付建立合作伙伴关系',
+    45: '扩大与新合作伙伴的合作',
+    46: 'Phase 4: 服务扩展与创新',
+    47: '引入更多线下支付服务及合作伙伴',
+    48: '扩大全球合作伙伴关系及合作项目',
+
+    94: 'KONPAY钱包安全架构的全面改革与升级',
+    95: '优化KONPAY钱包的交易处理速度和应用性能',
+    96: '支持将下一代高性能主网和L2网络集成至KONPAY钱包',
+    97: '基于KONPAY钱包建立基础服务中心，并拓展战略合作伙伴关系',
+
 };
 
 function setLanguage(currentLanguage) {
