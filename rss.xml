@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Kon-Pay.io Blog</title>
+  <link>https://kon-pay.io/</link>
+  <description>Latest updates from Kon-Pay.io</description>
+  <language>en-us</language>
+  <lastBuildDate>Tue, 21 May 2025 10:00:00 +0900</lastBuildDate>
+
+  <item>
+    <title>New Roadmap Released</title>
+    <link>https://kon-pay.io/roadmap</link>
+    <description>Read about our newly released roadmap for Q3 2025.</description>
+    <pubDate>Tue, 21 May 2025 09:00:00 +0900</pubDate>
+  </item>
+
+  <item>
+    <title>Team Expansion Announcement</title>
+    <link>https://kon-pay.io/team</link>
+    <description>We’re excited to introduce new members to our development team.</description>
+    <pubDate>Mon, 13 May 2025 08:00:00 +0900</pubDate>
+  </item>
+
+</channel>
+</rss>
