@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kon-pay.io/sitemap.xml
+Sitemap: https://konwallet.io/sitemap.xml
