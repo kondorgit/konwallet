@@ -330,40 +330,6 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
 }
 
-#mobile-menu-btn-buy.on {
-    border-radius: 0 0 7.33333vw 7.33333vw;
-}
-
-.mobie-buy-kon p {
-    opacity: 1 !important;
-}
-
-.mobie-buy-kon {
-    position: absolute;
-    background: #0027ff;
-    color: #0027ff;
-    border-radius: 7.33333vw 7.33333vw;
-    padding: 10px 5.33333vw;
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(24px, 6.4vw, 40px);
-    line-height: 150%;
-    letter-spacing: -0.032vw;
-    margin-top: clamp(-159px, -27.4vw, -61px);
-    bottom: 0;
-    height: 69.7vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2.4vw;
-    height: 0vw;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    overflow: hidden;
-    opacity: 0;
-    z-index: 2;
-}
-
 .icon-gitbook {
     width: 20px;
     height: 20px;
@@ -983,10 +949,30 @@ body::-webkit-scrollbar-thumb {
 
 .sub-news-title2 {
     color: #f5f5f7;
-    font-size: 0.6vw;
+    /* 기본적으로 PC 환경에 적합한 vw 단위 유지 */
+    font-size: 1.4vw;
     margin-top: 0.5vw;
 }
 
+/* 태블릿 (최대 768px) */
+@media (max-width: 768px) {
+    .sub-news-title2 {
+        /* vw 단위보다 고정된 rem 또는 px 단위를 사용하여 가독성 확보 */
+        font-size: 16px;
+        /* 또는 16px */
+        margin-top: 1rem;
+    }
+}
+
+/* 모바일 (최대 480px) */
+@media (max-width: 480px) {
+    .sub-news-title2 {
+        /* 모바일에서 더 잘 보이도록 폰트 크기 조정 */
+        font-size: 14px;
+        /* 또는 14px */
+        margin-top: 0.8rem;
+    }
+}
 
 .sub-section-1 .video-div {
     width: 100%;
@@ -1982,7 +1968,7 @@ iframe {
 .mobile-menu ul li p {
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(24px, 6.4vw, 40px);
+    font-size: clamp(24px, 1.4vw, 40px);
     line-height: 150%;
     letter-spacing: -0.032vw;
     color: #ffffff;
@@ -2362,8 +2348,10 @@ iframe {
 
     .nav .menu {
         display: none;
-        flex-wrap: nowrap;             /* 줄바꿈 금지 */
-        justify-content: flex-start;   /* 왼쪽 정렬(간격은 gap로) */
+        flex-wrap: nowrap;
+        /* 줄바꿈 금지 */
+        justify-content: flex-start;
+        /* 왼쪽 정렬(간격은 gap로) */
     }
 
     .mobile-nav {
@@ -3632,33 +3620,31 @@ footer {
 
 .newnews-container {
     display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
+    flex-wrap: wrap;
+    /* 요소들이 다음 줄로 넘어가도록 설정 */
+     justify-content: center;
+    /* 요소들을 가운데 정렬 */
     gap: 20px;
     padding: 20px;
 }
 
-.newnews-header {
-    /* 16:9 비율을 직접 설정 */
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-}
-
-.newnews-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.newnews-item {
+    width: 25%;
+    /* PC 버전에서 4개씩 보이도록 너비 설정 */
+    /* 아래 코드는 아이템 하나하나를 지칭하는 클래스가 있다고 가정했습니다. */
 }
 
 @media (max-width: 768px) {
     .newnews-container {
-        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        /* 세로 정렬 시 아이템을 가운데로 정렬 */
     }
-}
 
-@media (max-width: 480px) {
-    .newnews-container {
-        grid-template-columns: repeat(2, 1fr);
+    .newnews-item {
+        width: 100%;
+        /* 모바일에서 아이템 너비를 100%로 설정 */
+        max-width: 300px;
+        /* 너무 커지는 것을 방지 */
     }
 }
 
@@ -4784,54 +4770,5 @@ footer {
             font-size: 13px;
         }
     }
-
-/* === 새 메뉴 스코프: newmenu 전용 =================================== */
-.nav .newmenu {
-    display: flex !important;
-    flex-wrap: nowrap;             /* 항상 한 줄 */
-    justify-content: flex-start;   /* 왼쪽 정렬 */
-    gap: 12px;                     /* 항목 간격 */
-  }
-  
-  /* 매뉴얼 버튼(언어 버튼과 동일 높이 30px) */
-  .nav .newmenu .new-manual-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    height: 30px;
-    padding: 0 12px;
-    border-radius: 9999px;         /* 완전 라운드 */
-    background: #333333;           /* 요청 배경 */
-    white-space: nowrap;
-  }
-  
-  /* 아이콘 크기 */
-  .nav .newmenu .new-icon-gitbook {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-  }
-  
-  /* 라벨 노출: 기본(데스크톱)은 전체 텍스트 */
-  .nav .newmenu .new-label-desktop { display: inline; }
-  .nav .newmenu .new-label-mobile  { display: none;  }
-  
-  /* 언어 버튼을 우측 끝으로 */
-  .nav .newmenu .menu-btn-lang {
-    margin-left: auto;
-    display: flex !important;
-  }
-  
-  /* === 모바일 전용: 햄버거/오버레이 제거 + 라벨 축약 =================== */
-  @media (max-width: 767px) {
-    /* 기존 모바일 메뉴 UI 숨김 */
-    .nav .mobile-nav      { display: none !important; }
-    .nav .mobile-menu-div { display: none !important; }
-  
-    /* 모바일에선 'Manual'만 보이게 */
-    .nav .newmenu .new-label-desktop { display: none; }
-    .nav .newmenu .new-label-mobile  { display: inline; }
-  }
-  
 
 }
