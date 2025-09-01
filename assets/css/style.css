@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav .menu {
-    width: 565px;
+    /* width: 565px; */
     height: 56px;
     background: transparent;
     margin-right: 15.972vw;
@@ -138,46 +138,20 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    gap: clamp(8px, 2vw, 24px);
 }
 
 .nav .menu .menu-txt {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 22px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .nav .menu .menu-txt.active {
     opacity: 0.56;
-}
-
-.menu-btn {
-    height: 30px;
-    background: #0027ff;
-    border-radius: 980px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 0 12px 2px 12px;
-    margin-top: 4px;
-    cursor: pointer;
-}
-
-.menu-btn-lang {
-    height: 30px;
-    cursor: pointer;
-    margin-left: 9px;
 }
 
 .buy-btn-lang {
@@ -388,6 +362,11 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     opacity: 0;
     z-index: 2;
+}
+
+.icon-gitbook {
+    width: 20px;
+    height: 20px;
 }
 
 .mobie-buy-kon.on {
@@ -1932,7 +1911,7 @@ iframe {
     height: 100vh;
     z-index: 999;
     position: fixed;
-    top: 0;
+    top: 100;
     right: -100%;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -2383,6 +2362,8 @@ iframe {
 
     .nav .menu {
         display: none;
+        flex-wrap: nowrap;             /* 줄바꿈 금지 */
+        justify-content: flex-start;   /* 왼쪽 정렬(간격은 gap로) */
     }
 
     .mobile-nav {
@@ -4804,6 +4785,53 @@ footer {
         }
     }
 
-
+/* === 새 메뉴 스코프: newmenu 전용 =================================== */
+.nav .newmenu {
+    display: flex !important;
+    flex-wrap: nowrap;             /* 항상 한 줄 */
+    justify-content: flex-start;   /* 왼쪽 정렬 */
+    gap: 12px;                     /* 항목 간격 */
+  }
+  
+  /* 매뉴얼 버튼(언어 버튼과 동일 높이 30px) */
+  .nav .newmenu .new-manual-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 9999px;         /* 완전 라운드 */
+    background: #333333;           /* 요청 배경 */
+    white-space: nowrap;
+  }
+  
+  /* 아이콘 크기 */
+  .nav .newmenu .new-icon-gitbook {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+  }
+  
+  /* 라벨 노출: 기본(데스크톱)은 전체 텍스트 */
+  .nav .newmenu .new-label-desktop { display: inline; }
+  .nav .newmenu .new-label-mobile  { display: none;  }
+  
+  /* 언어 버튼을 우측 끝으로 */
+  .nav .newmenu .menu-btn-lang {
+    margin-left: auto;
+    display: flex !important;
+  }
+  
+  /* === 모바일 전용: 햄버거/오버레이 제거 + 라벨 축약 =================== */
+  @media (max-width: 767px) {
+    /* 기존 모바일 메뉴 UI 숨김 */
+    .nav .mobile-nav      { display: none !important; }
+    .nav .mobile-menu-div { display: none !important; }
+  
+    /* 모바일에선 'Manual'만 보이게 */
+    .nav .newmenu .new-label-desktop { display: none; }
+    .nav .newmenu .new-label-mobile  { display: inline; }
+  }
+  
 
 }

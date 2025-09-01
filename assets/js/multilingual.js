@@ -23,6 +23,7 @@ $.lang.EN = {
     19: `KONWallet officially launches a rechargeable <br />prepaid card for digital assets`,
     20: `Jeongdong1946 to pilot <br />KONWallet payments`,
     21: `Please contact us for any inquiries related to service and wallet operation.`,
+    22: `KONWallet<br />Manual`,
 };
 
 $.lang.KO = {
@@ -48,6 +49,7 @@ $.lang.KO = {
     19: `콘월렛 디지털 자산 충전식 선불카드 공식 런칭`,
     20: `정동1946, 콘월렛 결제 시범운영한다`,
     21: `서비스 및 지갑 운영 관련 문의가 있으시면 문의해 주시기 바랍니다.`,
+    22: `콘월렛 메뉴얼`,
 };
 
 $.lang.VN = {
@@ -73,7 +75,7 @@ $.lang.VN = {
     19: `KONWallet chính thức ra mắt thẻ trả trước <br />nạp tiền dành cho tài sản số`,
     20: `Jeongdong1946 thí điểm <br />thanh toán bằng KONWallet`,
     21: `Vui lòng liên hệ với chúng tôi nếu bạn có bất kỳ thắc mắc nào liên quan đến dịch vụ và vận hành ví.`,
-
+    22: `Hướng dẫn<br />KONWallet`,
 };
 
 $.lang.JA = {
@@ -99,6 +101,7 @@ $.lang.JA = {
     19: `KONWallet、デジタル資産用リチ<br />ャージ式プリペイドカードを正式リリース`,
     20: `Jeongdong1946、KONWallet決済の試験運用を開始`,
     21: `サービスおよびウォレットの運用に関するお問い合わせは、弊社までご連絡ください。`,
+    22: `KONWallet<br />マニュアル`,
 };
 
 $.lang.ZH = {
@@ -124,6 +127,7 @@ $.lang.ZH = {
     19: `KONWallet 正式推出数字资产可充值预付卡`,
     20: `Jeongdong1946 将试点 KONWallet 支付`,
     21: `如对服务及钱包运营有任何咨询，请与我们联系。`,
+    22: `KONWallet<br />手册`,
 };
 
 function setLanguage(currentLanguage) {

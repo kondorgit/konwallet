@@ -81,13 +81,17 @@
         <div class="logo" onclick="location.href='/'"></div>
         <div class="mobile-nav"></div>
         <div class="mobile-menu-div">
-            <!-- <div class="mobile-menu-backdrop"></div> -->
             <div class="mobile-menu">
                 <div class="close-btn"></div>
                 <ul>
-                    <li onclick="location.href='/'" class="on">
-                        <p>HOME</p>
-                        <div class="mobile-menu-line1 on"></div>
+                    <li onclick="window.open('https://konpay.info/','_blank','noopener')" role="link" tabindex="0"
+                        onkeydown="if(event.key==='Enter'||event.key===' '){ window.open('https://konpay.info/','_blank','noopener'); }">
+                        <p
+                            style="display:flex;align-items:center;gap:10px;white-space:nowrap;line-height:1;color:inherit;margin:0;">
+                            <img src="/assets/img/gitbook.svg" alt=""
+                                style="width:24px;height:24px;display:inline-block;flex-shrink:0;vertical-align:middle;">
+                                <span data-langNum="22" class="main-subtxt">KONWallet Manual</span>
+                            </p>
                     </li>
                 </ul>
                 <div class="mobile-menu-btn-lang">
@@ -118,7 +122,16 @@
                 </div>
             </div>
         </div>
+
         <div class="menu">
+            <div class="menu-txt noselect manual-link" role="link" tabindex="0"
+                onclick="window.open('https://konpay.info/', '_blank', 'noopener')"
+                onkeydown="if(event.key==='Enter'||event.key===' '){ window.open('https://konpay.info/', '_blank', 'noopener'); }"
+                style="cursor:pointer;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;">
+                <img src="/assets/img/gitbook.svg" alt="" style="width:24px;height:24px;display:inline-block;">
+                <span data-langNum="22" class="text">KONWallet Manual</span>
+            </div>
+
             <div class="atropos my-atropos7">
                 <!-- scale container (required) -->
                 <div class="atropos-scale">
@@ -297,6 +310,7 @@
                                     <img src="/assets/img/pro_02.png" class="pro_02" />
                                     <div class="pro_02_div">
                                         <img src="/assets/img/pro_02_1.png" class="pro_02_1" />
+                                        <img src="/assets/img/pro_02_2.png" class="pro_02_1" />
                                         <img src="/assets/img/pro_03.png" class="pro_03" />
                                         <img src="/assets/img/pro_04.png" class="pro_04" />
                                         <img src="/assets/img/pro_05.png" class="pro_05" />
