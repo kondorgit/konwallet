@@ -3636,6 +3636,15 @@ footer {
 .newnews-item {
     display: flex;
     flex-direction: column;
+    /* 추가: 아이템 내의 이미지가 부모 너비에 맞게 조절되도록 설정 */
+    overflow: hidden;
+}
+
+.newnews-item img {
+    /* 이미지가 부모 요소의 너비를 넘지 않도록 설정 */
+    max-width: 100%;
+    /* 이미지의 원래 비율을 유지하면서 크기 조정 */
+    height: auto;
 }
 
 .newnews-item .text-container {
