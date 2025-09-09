@@ -1,6 +1,6 @@
 history.scrollRestoration = 'manual';
 
-var language = ['en', 'ko', 'ja', 'zh', 'vn'];
+var language = ['en', 'ko', 'ja', 'cn', 'vn'];
 var currentLang = '';
 var isMobile = false;
 var docWidth = 0;
@@ -38,8 +38,8 @@ function langOpenCloseMobile() {
 }
 
 function languageChange(lang) {
-    $('#lang-0, #lang-1, #lang-2, #lang-3, #lang-4').removeClass('lang-en lang-ko lang-ja lang-zh lang-vn');
-    $('#mobile-lang-0, #mobile-lang-1, #mobile-lang-2, #mobile-lang-3, #mobile-lang-4').removeClass('mobile-lang-en mobile-lang-ko mobile-lang-ja mobile-lang-zh mobile-lang-vn');
+    $('#lang-0, #lang-1, #lang-2, #lang-3, #lang-4').removeClass('lang-en lang-ko lang-ja lang-cn lang-vn');
+    $('#mobile-lang-0, #mobile-lang-1, #mobile-lang-2, #mobile-lang-3, #mobile-lang-4').removeClass('mobile-lang-en mobile-lang-ko mobile-lang-ja mobile-lang-cn mobile-lang-vn');
 
     var orderIdx = 1;
     for (var i = 0; i < language.length; i++) {

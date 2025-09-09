@@ -580,7 +580,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: 6.5px;
 }
 
-.lang-zh {
+.lang-cn {
     width: 17px;
     height: 17px;
     background-image: url('/assets/img/china.svg');
@@ -2273,7 +2273,7 @@ iframe {
     margin-right: 13px;
 }
 
-.mobile-lang-zh {
+.mobile-lang-cn {
     width: 26px;
     height: 26px;
     background-image: url('/assets/img/china.svg');
@@ -2718,8 +2718,6 @@ iframe {
     .sub-section-2 .section-2-div .section-2-txt-div .section-5-txt {
         padding-left: 5vw;
     }
-
-    .sub-section-3 {}
 
     .media-txt1 {
         font-size: 7.2vw;
@@ -3667,6 +3665,4 @@ footer {
     .newnews-container {
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
 }
